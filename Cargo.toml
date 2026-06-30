@@ -1,0 +1,16 @@
+[package]
+name = "kist"
+version = "0.1.0"
+edition = "2024"
+authors = ["Stéphan Kempkes <stephan@kyst.io>"]
+description = "Crash-safe, append-only disk queue for Rust"
+license = "MIT OR Apache-2.0"
+keywords = ["queue", "disk", "persistent", "crash-safe", "append-only"]
+categories = ["data-structures", "filesystem"]
+readme = "README.md"
+
+[dependencies]
+crc32fast = "1.4"
+
+[dev-dependencies]
+tempfile = "3.10"
