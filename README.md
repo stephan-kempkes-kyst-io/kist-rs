@@ -73,10 +73,12 @@ Kist is deliberately narrow:
 
 Kist writes records to append-only segment files:
 
+```
 queue/
 ├── 00000000000000000000.seg   ← consumed segments (deleted)
 ├── 00000000000000001000.seg   ← partially consumed
 └── 00000000000000002000.seg   ← active write segment
+```
 
 Each record is stored with a length prefix and CRC32C checksum.
 On recovery after a crash, Kist scans the active segment and
