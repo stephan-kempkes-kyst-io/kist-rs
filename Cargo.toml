@@ -14,3 +14,8 @@ crc32fast = "1.4"
 
 [dev-dependencies]
 tempfile = "3.10"
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "throughput"
+harness = false
